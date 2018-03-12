@@ -1,21 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
+    const name = "Ray";
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">{name}s To Do list</h1>
+            <h2>
+              <button className="App-button">Refresh</button>
+            </h2>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <li className="App-body-text">STOP</li>
+        <li className="App-body-text">TAKING</li>
+        <li className="App-body-text">SHORT</li>
+        <li className="App-body-text">CUTS</li>
       </div>
     );
   }
+  // render(){
+  //   return (
+  //     <div className="App">
+  //      <header className = "App">
+  //        <h1 className = "App">Steal My Code</h1>
+  //     </header>
+  //     </div>
+  //   )
+  // }
 }
 
 export default App;
